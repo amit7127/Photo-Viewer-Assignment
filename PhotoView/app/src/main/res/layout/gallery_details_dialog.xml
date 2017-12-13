@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Image Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/image_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_not_available" />
+
+        <ProgressBar
+            android:id="@+id/progress_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/image_details_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Java Tutorial or Core Java Tutorial or Java Programming Tutorial is a widely used robust technology. Let's start learning Java from basic questions like what is Java tutorial," />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/direction_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Map Details" />
+
+        <com.like.LikeButton
+            android:id="@+id/like_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:anim_scale_factor="2"
+            app:circle_end_color="@color/colorAccent"
+            app:circle_start_color="@color/colorPrimary"
+            app:dots_primary_color="@color/colorAccent"
+            app:dots_secondary_color="@color/colorPrimary"
+            app:icon_size="25dp"
+            app:icon_type="Star"
+            app:like_drawable="@drawable/thumb_on"
+            app:unlike_drawable="@drawable/thumb_off" />
+
+    </RelativeLayout>
+
+</LinearLayout>

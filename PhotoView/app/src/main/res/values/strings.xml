@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Photo View</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Want to Register?</string>
+    <string name="title_activity_gallery">Gallery</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="go_to_map"><u>GO TO MAP</u></string>
+
+    <string name="is_user_loggedin">isLoggedIn</string>
+    <string name="userName">name</string>
+    <string name="userMail">mail</string>
+
+
+</resources>
